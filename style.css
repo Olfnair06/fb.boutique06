@@ -98,3 +98,43 @@ section {
     padding: 20px;
     text-align: center;
 }
+/* Styles pour afficher les produits en grille */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments d'aller à la ligne */
+    justify-content: center; /* Centre les produits horizontalement */
+    gap: 20px; /* Espace entre les produits */
+    margin-bottom: 40px;
+}
+
+.product-item {
+    width: 100%; /* Par défaut, prend toute la largeur sur mobile */
+    max-width: 300px; /* Limite la taille des cartes sur grand écran */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.price-tag {
+    font-size: 1.3em;
+    color: #e74c3c; /* Rouge vif pour le prix */
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+}
+
+/* Règle pour que les produits s'affichent côte à côte sur les grands écrans */
+@media (min-width: 768px) {
+    .product-item {
+        width: calc(33.333% - 20px); /* Affiche 3 colonnes avec un espacement */
+    }
+}

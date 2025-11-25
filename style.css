@@ -58,7 +58,7 @@ section {
     margin-bottom: 40px;
 }
 
-/* Carte de produit */
+/* Carte de produit (Pour les décorations et jeux) */
 .product-item {
     background: white;
     border: 1px solid #ddd;
@@ -69,7 +69,7 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* --- Règle CRUCIALE pour contraindre la taille des images --- */
+/* --- Règle pour contraindre la taille des images dans les cartes produit classiques --- */
 .product-item img {
     max-width: 100%; /* L'image ne dépassera JAMAIS 100% de la largeur de sa carte. */
     height: auto;    /* Maintient les proportions */
@@ -78,14 +78,25 @@ section {
     margin-bottom: 15px;
 }
 
-/* Contrainte pour les images de la galerie Stylo (pour ne pas qu'elles soient trop grandes) */
+/* * CORRECTION POUR LA GALERIE STYLOS
+ * 'object-fit: cover' remplit la zone sans espace blanc.
+ */
 .product-item.product-showcase {
-    max-width: 250px; /* Cartes plus petites pour la galerie */
+    max-width: 250px; /* Largeur de la carte de la galerie */
+    height: 250px; /* HAUTEUR FIXE pour la galerie (rend le conteneur carré) */
+    overflow: hidden; /* Cache l'excédent de l'image (pour un remplissage parfait) */
+    padding: 0; /* Enlève le padding du conteneur pour que l'image touche les bords */
+    border: none; /* Enlève la bordure grise du conteneur (laisse l'ombre) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 .product-item.product-showcase img {
-    max-height: 250px; 
-    object-fit: contain;
+    width: 100%; /* L'image prend toute la largeur de son parent */
+    height: 100%; /* L'image prend toute la hauteur de son parent */
+    object-fit: cover; /* C'est la clé : remplit l'espace sans laisser de blanc */
+    border-radius: 8px; /* Applique les coins arrondis directement à l'image */
+    margin: 0;
 }
+
 
 .product-title {
     color: #34495e;

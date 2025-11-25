@@ -5,7 +5,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /* CHANGEMENT DU FOND : Utilisez une couleur différente, par exemple un gris très clair */
+    background-color: #e5e7eb; /* Nouveau fond, plus clair que l'ancien #f4f4f4 */
     color: #333;
     line-height: 1.6;
 }
@@ -76,7 +77,7 @@ section {
     border-radius: 4px;
 }
 
-.contact-form button {
+.contact-form button {.callout {
     background: #2ecc71; /* Vert */
     color: white;
     padding: 15px;
@@ -234,4 +235,14 @@ section {
 /* Surcharge la règle générique du formulaire pour éviter qu'il ne prenne toute la largeur */
 .contact-form input[type="number"] {
     width: auto !important; 
+}
+/* Style pour l'appel aux commandes personnalisées */
+.callout {
+    background-color: #fce4e4; /* Un fond doux pour attirer l'attention (rose très pâle) */
+    padding: 30px 20px;
+    margin: 40px auto;
+    border: 2px solid #e74c3c; /* Bordure rouge pour l'impact */
+    border-radius: 8px;
+    max-width: 900px;
+    text-align: center;
 }

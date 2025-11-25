@@ -1,262 +1,154 @@
-/* style.css */
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Stylos - Personnalisé et 3D</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
 
-/* Style de base */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    /* CHANGEMENT DU FOND : Utilisez une couleur différente, par exemple un gris très clair */
-    background-color: #e5e7eb; /* Nouveau fond, plus clair que l'ancien #f4f4f4 */
-    color: #333;
-    line-height: 1.6;
-}
+    <form action="https://formspree.io/f/xyzawyea" method="POST"> 
 
-/* En-tête (Header) */
-.header {
-    background: #34495e; /* Bleu foncé pour le header */
-    color: white;
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        <header class="header">
+            <div class="logo">Boutique Stylos</div>
+            <nav>
+                <a href="#stylos">Mes Stylos</a>
+                <a href="#deco">Décorations diverses</a>
+                <a href="#jeux">Jeux</a>
+                <a href="#commander">Commander</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
+        <section class="hero" id="stylos">
+            <h1>Mes Stylos Flèche - Pièce Unique et Personnalisable</h1>
+            <p>Le Stylo Flèche est notre modèle personnalisable phare. Choisissez vos couleurs, votre finition et même une gravure. Chaque stylo est unique !</p>
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 5px 10px;
-}
+            <h3 style="font-size: 1.8em; color: #2c3e50; margin-top: 20px;">Prix : 15,00€ (Prix de base)</h3>
+            <p style="margin-bottom: 20px; color: #e74c3c;">Le prix peut varier selon les options de personnalisation. Veuillez indiquer vos détails dans le formulaire de commande.</p>
+            
+            <div style="margin-bottom: 40px;">
+                <input type="checkbox" id="stylo-interet" name="Interet_Stylo_Fleche" value="Oui">
+                <label for="stylo-interet" style="font-weight: bold; color: #34495e;">Je suis intéressé par ce stylo (détails dans le formulaire ci-dessous).</label>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-item product-showcase">
+                    <img src="images/mon_stylo_fleche.jpg.jpg" alt="Gros plan Stylo Flèche">
+                </div>
+                <div class="product-item product-showcase">
+                    <img src="images/Arrow_pen1.jpg" alt="Stylo flèche Rouge/Jaune">
+                </div>
+                <div class="product-item product-showcase">
+                    <img src="images/Arrow_pen2.jpg" alt="Stylo flèche Bleu">
+                </div>
+                <div class="product-item product-showcase">
+                    <img src="images/Arrow_pen3.jpg" alt="Stylo flèche Bicolore">
+                </div>
+                <div class="product-item product-showcase">
+                    <img src="images/Arrow_pen4.jpg" alt="Stylo flèche Mauve">
+                </div>
+                <div class="product-item product-showcase">
+                    <img src="images/Arrow_pen5.jpg" alt="Stylo flèche Vert">
+                </div>
+            </div>
+        </section>
+        <section class="hero" id="deco">
+            <h1>Décorations Diverses Imprimées en 3D</h1>
+            <p>Des objets décoratifs originaux, des figurines et des accessoires, parfaits pour la maison ou le bureau.</p>
+            
+            <div class="product-grid">
 
-/* Sections principales */
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
+                <div class="product-item">
+                    <img src="images/Calamars1.jpg" alt="Calamar Articulé 3D">
+                    <h3 class="product-title">Calamar Articulé</h3>
+                    <p class="price-tag">Prix : 18,00€</p>
+                    <p class="product-desc">Figurine articulée amusante, disponible en plusieurs couleurs.</p>
+                    <div class="quantity-selector">
+                        <label for="calamar-qty">Qté :</label>
+                        <input type="number" id="calamar-qty" name="Calamar_Articule_Quantite" min="0" value="0">
+                    </div>
+                </div>
 
-.hero {
-    background-color: white;
-    padding: 60px 20px;
-}
+                <div class="product-item">
+                    <img src="images/Casse_tete_déco.jpg" alt="Casse-tête décoratif Cube">
+                    <h3 class="product-title">Casse-tête Déco</h3>
+                    <p class="price-tag">Prix : 10,00€</p>
+                    <p class="product-desc">Un objet de décoration qui mettra vos méninges à l'épreuve.</p>
+                    <div class="quantity-selector">
+                        <label for="cassetete-qty">Qté :</label>
+                        <input type="number" id="cassetete-qty" name="Casse_Tete_Deco_Quantite" min="0" value="0">
+                    </div>
+                </div>
 
-.contact {
-    background-color: #ecf0f1; /* Gris clair */
-}
+                <div class="product-item">
+                    <img src="images/Couple_coeur.jpg" alt="Figurine Couple Cœur">
+                    <h3 class="product-title">Couple Cœur</h3>
+                    <p class="price-tag">Prix : 15,00€</p>
+                    <p class="product-desc">Un cadeau romantique idéal pour la Saint-Valentin ou un anniversaire.</p>
+                    <div class="quantity-selector">
+                        <label for="coeur-qty">Qté :</label>
+                        <input type="number" id="coeur-qty" name="Couple_Coeur_Quantite" min="0" value="0">
+                    </div>
+                </div>
 
-/* Formulaire */
-.contact-form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    text-align: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+                <div class="product-item">
+                    <img src="images/Couple_promenade.jpg" alt="Figurine Couple Promenade">
+                    <h3 class="product-title">Couple Promenade</h3>
+                    <p class="price-tag">Prix : 15,00€</p>
+                    <p class="product-desc">Un couple en pleine promenade, un clin d'œil à l'amour et l'aventure.</p>
+                    <div class="quantity-selector">
+                        <label for="promenade-qty">Qté :</label>
+                        <input type="number" id="promenade-qty" name="Couple_Promenade_Quantite" min="0" value="0">
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <img src="images/Deco_noel_personnalisee.jpg" alt="Décoration de Noël personnalisée">
+                    <h3 class="product-title">Déco Noël Personnalisée</h3>
+                    <p class="price-tag">Prix : 8,00€</p>
+                    <p class="product-desc">Une boule de Noël unique à votre nom ou à celui de vos proches.</p>
+                    <div class="quantity-selector">
+                        <label for="noel-qty">Qté :</label>
+                        <input type="number" id="noel-qty" name="Deco_Noel_Quantite" min="0" value="0">
+                    </div>
+                </div>
 
-.contact-form label,
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 15px;
-}
+                <div class="product-item">
+                    <img src="images/Figu_1.jpg" alt="Mini Figurine Articulée">
+                    <h3 class="product-title">Mini Figurine Articulée</h3>
+                    <p class="price-tag">Prix : 7,00€</p>
+                    <p class="product-desc">Petite figurine articulée, parfaite pour le bureau ou comme cadeau surprise.</p>
+                    <div class="quantity-selector">
+                        <label for="figurine-qty">Qté :</label>
+                        <input type="number" id="figurine-qty" name="Mini_Figurine_Quantite" min="0" value="0">
+                    </div>
+                </div>
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+                <div class="product-item">
+                    <img src="images/Porte_stylo1.jpg" alt="Porte stylo thématique">
+                    <h3 class="product-title">Porte Stylo Thématique</h3>
+                    <p class="price-tag">Prix : 12,00€</p>
+                    <p class="product-desc">Organisez votre bureau avec un porte-stylo original et amusant.</p>
+                    <div class="quantity-selector">
+                        <label for="portestylo-qty">Qté :</label>
+                        <input type="number" id="portestylo-qty" name="Porte_Stylo_Quantite" min="0" value="0">
+                    </div>
+                </div>
 
-.contact-form button {.callout {
-    background: #2ecc71; /* Vert */
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background 0.3s;
-}
+            </div>
+        </section>
+        <section class="hero" id="jeux">
+            <h1>Jeux et Casse-têtes 3D</h1>
+            <p>Des jeux en 3D amusants et originaux pour les petits et les grands.</p>
 
-.contact-form button:hover {
-    background: #27ae60; /* Vert foncé au survol */
-}
-
-/* Pied de page (Footer) */
-.footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-/* Styles pour afficher les produits en grille */
-.product-grid {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux éléments d'aller à la ligne */
-    justify-content: center; /* Centre les produits horizontalement */
-    gap: 20px; /* Espace entre les produits */
-    margin-bottom: 40px;
-}
-
-.product-item {
-    width: 100%; /* Par défaut, prend toute la largeur sur mobile */
-    max-width: 300px; /* Limite la taille des cartes sur grand écran */
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
-}
-
-.product-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-.price-tag {
-    font-size: 1.3em;
-    color: #e74c3c; /* Rouge vif pour le prix */
-    font-weight: bold;
-    margin: 5px 0 10px 0;
-}
-
-/* Règle pour que les produits s'affichent côte à côte sur les grands écrans */
-@media (min-width: 768px) {
-    .product-item {
-        width: calc(33.333% - 20px); /* Affiche 3 colonnes avec un espacement */
-    }
-}
-/* --- Nouveaux styles pour la grille des produits --- */
-
-/* Conteneur principal de la grille */
-.product-grid {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; /* Centre les produits horizontalement */
-    gap: 20px; /* Espace entre les produits */
-    margin: 30px 0;
-}
-
-/* Style de chaque carte produit */
-.product-item {
-    width: 100%; /* Prend toute la largeur sur mobile */
-    max-width: 300px; /* Limite la taille des cartes */
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    text-align: center;
-}
-
-.product-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin-bottom: 10px;
-}
-
-.product-title {
-    font-size: 1.4em;
-    color: #34495e;
-    margin-bottom: 5px;
-}
-
-.price-tag {
-    font-size: 1.3em;
-    color: #e74c3c; /* Rouge pour mettre le prix en évidence */
-    font-weight: bold;
-    margin: 5px 0 10px 0;
-}
-
-.product-desc {
-    font-size: 0.9em;
-    color: #7f8c8d;
-}
-
-/* Règle pour l'affichage sur tablettes et ordinateurs (3 produits par ligne) */
-@media (min-width: 768px) {
-    .product-item {
-        /* Calcule la largeur pour 3 colonnes moins l'espacement */
-        width: calc(33.333% - 13.333px);
-    }
-    
-    /* Pour la galerie 'Mes Stylos', on veut des petites vignettes */
-    .product-item.product-showcase {
-        width: calc(16.666% - 16.666px);
-        padding: 5px;
-        box-shadow: none;
-        border: none;
-    }
-}
-/* --- Styles pour le Panier Simple (Sélecteur de quantité) --- */
-
-/* Style pour le sélecteur de quantité */
-.quantity-selector {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.quantity-selector label {
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 0;
-    width: auto;
-    display: inline-block;
-}
-
-/* Assure que le champ de quantité est bien dimensionné dans la carte produit */
-.product-item input[type="number"] {
-    display: inline-block;
-    width: 60px !important; 
-    padding: 5px;
-    border: 1px solid #bdc3c7;
-    border-radius: 4px;
-    text-align: center;
-    margin: 0;
-}
-
-/* Surcharge la règle générique du formulaire pour éviter qu'il ne prenne toute la largeur */
-.contact-form input[type="number"] {
-    width: auto !important; 
-}
-/* Style pour l'appel aux commandes personnalisées */
-.callout {
-    background-color: #fce4e4; /* Un fond doux pour attirer l'attention (rose très pâle) */
-    padding: 30px 20px;
-    margin: 40px auto;
-    border: 2px solid #e74c3c; /* Bordure rouge pour l'impact */
-    border-radius: 8px;
-    max-width: 900px;
-    text-align: center;
-}
-/* --- Correction de la taille des images --- */
-
-/* Applique ces règles à toutes les images contenues dans un bloc .product-item */
-.product-item img {
-    max-width: 100%; /* Extrêmement important : L'image ne dépassera jamais la largeur de sa carte parente */
-    height: auto;    /* Maintient les proportions de l'image pour éviter la déformation */
-    display: block;  /* Aide à l'alignement et supprime l'espace vide sous l'image */
-}
-
-/* De plus, assurez-vous que la galerie de stylos est également contrainte */
-.product-item.product-showcase img {
-    max-height: 200px; /* Limite la hauteur des images de la galerie de stylos (optionnel) */
-    object-fit: contain; /* Assure que l'image entière est visible sans être coupée */
-}
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/Tetris1.jpg" alt="Jeu de construction Tetris 3D">
+                    <h3 class="product-title">Jeu de construction Tetris</h3>
+                    <p class="price-tag">Prix : 20,00€</p>
+                    <p class="product-desc">Un jeu de construction basé sur le célèbre jeu vidéo, idéal pour les soirées en famille.</p>
+                    <div class="quantity-selector">
+                        <label for="tetris-qty">Qté :</label>
+                        <input type="number" id="tetris-qty

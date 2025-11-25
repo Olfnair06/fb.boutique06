@@ -246,3 +246,17 @@ section {
     max-width: 900px;
     text-align: center;
 }
+/* --- Correction de la taille des images --- */
+
+/* Applique ces règles à toutes les images contenues dans un bloc .product-item */
+.product-item img {
+    max-width: 100%; /* Extrêmement important : L'image ne dépassera jamais la largeur de sa carte parente */
+    height: auto;    /* Maintient les proportions de l'image pour éviter la déformation */
+    display: block;  /* Aide à l'alignement et supprime l'espace vide sous l'image */
+}
+
+/* De plus, assurez-vous que la galerie de stylos est également contrainte */
+.product-item.product-showcase img {
+    max-height: 200px; /* Limite la hauteur des images de la galerie de stylos (optionnel) */
+    object-fit: contain; /* Assure que l'image entière est visible sans être coupée */
+}

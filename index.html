@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylos Personnalisés - Commande Facile</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Boutique Stylos</div>
+        <nav>
+            <a href="#produits">Nos Stylos</a>
+            <a href="#commander">Commander</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="produits">
+        <h1>Stylos Flèche Personnalisés - Création sur Mesure</h1>
+        <p>Création artisanale de stylos uniques, imprimés en 3D et personnalisés selon vos envies (cadeaux, événements, entreprises).</p>
+        
+        <img src="mon_stylo_fleche.jpg" alt="Stylo flèche noir et jaune personnalisé" style="max-width: 100%; height: auto; margin: 30px auto; display: block; border-radius: 8px;">
+
+    </section>
+
+    <section class="contact" id="commander">
+        <h2>Passer Votre Commande (Paiement Main à Main)</h2>
+        <p>Remplissez le formulaire ci-dessous. Nous vous contacterons par email pour confirmer les détails, le tarif et organiser la remise.</p>
+
+        <form class="contact-form" action="https://formspree.io/f/xyzawyea" method="POST">
+            
+            <label for="nom">Nom & Prénom:</label>
+            <input type="text" id="nom" name="Nom_Client" placeholder="Votre nom complet" required>
+            
+            <label for="email">Votre Email (pour la réponse):</label>
+            <input type="email" id="email" name="_replyto" placeholder="exemple@mail.com" required>
+
+            <label for="tel">Téléphone (Optionnel):</label>
+            <input type="tel" id="tel" name="Telephone_Client" placeholder="06 XX XX XX XX">
+
+            <label for="details">Détails de la commande (Couleur, gravure, quantité, etc.):</label>
+            <textarea id="details" name="Details_Commande" rows="5" placeholder="Ex: 1 stylo flèche, couleur rouge/noir, gravure 'Meilleur Ami', 5 exemplaires"></textarea>
+            
+            <p style="font-weight: bold; margin-top: 15px;">* IMPORTANT : Le paiement se fera en main propre lors de la remise (espèces ou virement instantané).</p>
+
+            <button type="submit" class="button">Envoyer ma commande</button>
+        </form>
+    </section>
+    
+    <footer class="footer" id="contact">
+        <p>&copy; 2025 Boutique Stylos - Tous droits réservés.</p>
+        <p>Contactez-nous pour toute question : [VOTRE VRAI EMAIL]</p>
+    </footer>
+</body>
+</html>

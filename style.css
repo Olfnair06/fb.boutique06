@@ -1,0 +1,100 @@
+/* style.css */
+
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête (Header) */
+.header {
+    background: #34495e; /* Bleu foncé pour le header */
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+}
+
+/* Sections principales */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: white;
+    padding: 60px 20px;
+}
+
+.contact {
+    background-color: #ecf0f1; /* Gris clair */
+}
+
+/* Formulaire */
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #2ecc71; /* Vert */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #27ae60; /* Vert foncé au survol */
+}
+
+/* Pied de page (Footer) */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

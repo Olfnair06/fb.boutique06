@@ -201,3 +201,37 @@ section {
         border: none;
     }
 }
+/* --- Styles pour le Panier Simple (Sélecteur de quantité) --- */
+
+/* Style pour le sélecteur de quantité */
+.quantity-selector {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-selector label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0;
+    width: auto;
+    display: inline-block;
+}
+
+/* Assure que le champ de quantité est bien dimensionné dans la carte produit */
+.product-item input[type="number"] {
+    display: inline-block;
+    width: 60px !important; 
+    padding: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Surcharge la règle générique du formulaire pour éviter qu'il ne prenne toute la largeur */
+.contact-form input[type="number"] {
+    width: auto !important; 
+}

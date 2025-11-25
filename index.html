@@ -24,7 +24,12 @@
     <p>Le Stylo Flèche est notre modèle personnalisable phare. Choisissez vos couleurs, votre finition et même une gravure. Chaque stylo est unique !</p>
 
     <h3 style="font-size: 1.8em; color: #2c3e50; margin-top: 20px;">Prix : 15,00€ (Prix de base)</h3>
-    <p style="margin-bottom: 40px; color: #e74c3c;">Le prix peut varier selon les options de personnalisation demandées.</p>
+    <p style="margin-bottom: 20px; color: #e74c3c;">Le prix peut varier selon les options de personnalisation. Veuillez indiquer vos détails dans le formulaire de commande.</p>
+    
+    <div style="margin-bottom: 40px;">
+        <input type="checkbox" id="stylo-interet" name="Interet_Stylo_Fleche" value="Oui">
+        <label for="stylo-interet" style="font-weight: bold; color: #34495e;">Je suis intéressé par ce stylo (détails dans le formulaire ci-dessous).</label>
+    </div>
     
     <div class="product-grid">
         <div class="product-item product-showcase">
@@ -58,6 +63,10 @@
             <h3 class="product-title">Calamar Articulé</h3>
             <p class="price-tag">Prix : 18,00€</p>
             <p class="product-desc">Figurine articulée amusante, disponible en plusieurs couleurs.</p>
+            <div class="quantity-selector">
+                <label for="calamar-qty">Qté :</label>
+                <input type="number" id="calamar-qty" name="Calamar_Articule_Quantite" min="0" value="0">
+            </div>
         </div>
 
         <div class="product-item">
@@ -65,6 +74,10 @@
             <h3 class="product-title">Casse-tête Déco</h3>
             <p class="price-tag">Prix : 10,00€</p>
             <p class="product-desc">Un objet de décoration qui mettra vos méninges à l'épreuve.</p>
+            <div class="quantity-selector">
+                <label for="cassetete-qty">Qté :</label>
+                <input type="number" id="cassetete-qty" name="Casse_Tete_Deco_Quantite" min="0" value="0">
+            </div>
         </div>
 
         <div class="product-item">
@@ -72,6 +85,10 @@
             <h3 class="product-title">Couple Cœur</h3>
             <p class="price-tag">Prix : 15,00€</p>
             <p class="product-desc">Un cadeau romantique idéal pour la Saint-Valentin ou un anniversaire.</p>
+            <div class="quantity-selector">
+                <label for="coeur-qty">Qté :</label>
+                <input type="number" id="coeur-qty" name="Couple_Coeur_Quantite" min="0" value="0">
+            </div>
         </div>
 
         <div class="product-item">
@@ -79,6 +96,10 @@
             <h3 class="product-title">Couple Promenade</h3>
             <p class="price-tag">Prix : 15,00€</p>
             <p class="product-desc">Un couple en pleine promenade, un clin d'œil à l'amour et l'aventure.</p>
+            <div class="quantity-selector">
+                <label for="promenade-qty">Qté :</label>
+                <input type="number" id="promenade-qty" name="Couple_Promenade_Quantite" min="0" value="0">
+            </div>
         </div>
         
         <div class="product-item">
@@ -86,6 +107,10 @@
             <h3 class="product-title">Déco Noël Personnalisée</h3>
             <p class="price-tag">Prix : 8,00€</p>
             <p class="product-desc">Une boule de Noël unique à votre nom ou à celui de vos proches.</p>
+            <div class="quantity-selector">
+                <label for="noel-qty">Qté :</label>
+                <input type="number" id="noel-qty" name="Deco_Noel_Quantite" min="0" value="0">
+            </div>
         </div>
 
         <div class="product-item">
@@ -93,6 +118,10 @@
             <h3 class="product-title">Mini Figurine Articulée</h3>
             <p class="price-tag">Prix : 7,00€</p>
             <p class="product-desc">Petite figurine articulée, parfaite pour le bureau ou comme cadeau surprise.</p>
+            <div class="quantity-selector">
+                <label for="figurine-qty">Qté :</label>
+                <input type="number" id="figurine-qty" name="Mini_Figurine_Quantite" min="0" value="0">
+            </div>
         </div>
 
         <div class="product-item">
@@ -100,6 +129,10 @@
             <h3 class="product-title">Porte Stylo Thématique</h3>
             <p class="price-tag">Prix : 12,00€</p>
             <p class="product-desc">Organisez votre bureau avec un porte-stylo original et amusant.</p>
+            <div class="quantity-selector">
+                <label for="portestylo-qty">Qté :</label>
+                <input type="number" id="portestylo-qty" name="Porte_Stylo_Quantite" min="0" value="0">
+            </div>
         </div>
 
     </div>
@@ -114,12 +147,16 @@
             <h3 class="product-title">Jeu de construction Tetris</h3>
             <p class="price-tag">Prix : 20,00€</p>
             <p class="product-desc">Un jeu de construction basé sur le célèbre jeu vidéo, idéal pour les soirées en famille.</p>
+            <div class="quantity-selector">
+                <label for="tetris-qty">Qté :</label>
+                <input type="number" id="tetris-qty" name="Jeu_Tetris_Quantite" min="0" value="0">
+            </div>
         </div>
     </div>
 </section>
 <section class="contact" id="commander">
     <h2>Passer Votre Commande (Paiement Main à Main)</h2>
-    <p>Remplissez le formulaire ci-dessous en indiquant les références des produits. Nous vous contacterons par email pour confirmer les détails, le tarif et organiser la remise.</p>
+    <p>Remplissez le formulaire ci-dessous. Les quantités sélectionnées ci-dessus seront envoyées avec ce formulaire. Nous vous contacterons par email pour confirmer les détails, le tarif et organiser la remise.</p>
 
     <form class="contact-form" action="https://formspree.io/f/xyzawyea" method="POST">
         
@@ -132,17 +169,14 @@
         <label for="tel">Téléphone (Optionnel):</label>
         <input type="tel" id="tel" name="Telephone_Client" placeholder="06 XX XX XX XX">
 
-        <label for="details">Détails de la commande (Nom des produits, couleurs, quantité, etc.):</label>
-        <textarea id="details" name="Details_Commande" rows="5" placeholder="Ex: 1 Stylo Flèche (Rouge/Noir), 2 Calamars Articulés (Bleu), 1 Jeu Tetris"></textarea>
+        <label for="details">Détails de la commande et personnalisation (Couleur stylo, gravure, etc.):</label>
+        <textarea id="details" name="Details_Commande" rows="5" placeholder="Ex: Stylo flèche en Rouge/Noir, gravure 'Mon Ami'."></textarea>
         
         <p style="font-weight: bold; margin-top: 15px;">* IMPORTANT : Le paiement se fera en main propre lors de la remise (espèces ou virement instantané).</p>
 
         <button type="submit" class="button">Envoyer ma commande</button>
     </form>
 </section>
-    <footer class="footer" id="contact">
-        <p>&copy; 2025 Boutique Stylos - Tous droits réservés.</p>
-        <p>Contactez-nous pour toute question : [fb.impress3d@gmail.com]</p>
     </footer>
 </body>
 </html>
